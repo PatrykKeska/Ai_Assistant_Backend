@@ -21,6 +21,6 @@ export class ChatController {
     );
     res
       .status(HttpStatus.OK)
-      .json({ replay: aiResponse.choices[0].message.content });
+      .json({ reply: aiResponse.choices[0].message.content });
   }
 }
