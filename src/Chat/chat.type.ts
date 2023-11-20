@@ -9,7 +9,10 @@ export type ChatResponseType = {
 
 export type Choice = {
   index: number;
-  message: object;
+  message: {
+    role: string;
+    content: string;
+  };
   finish_reason: string;
 };
 
