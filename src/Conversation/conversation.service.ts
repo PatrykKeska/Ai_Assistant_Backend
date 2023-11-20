@@ -34,8 +34,8 @@ export class ConversationService {
               },
               {
                 role: 'system',
-                content: `Chat with the user. If memmory is available use it to answer the question. If user say something which is not a  question like my name is John, than answer like that: Nice! how can i help you?.
-                 ${memmory}`,
+                content: `Chat with user. Use Context memmory to answer the question about user. Answer shortly and precisely. If question provided not enough information, ask user to provide more information. Keep conversation going.
+                 HERE CONTEXT MEMMORY: ${memmory}`,
               },
             ],
           },
